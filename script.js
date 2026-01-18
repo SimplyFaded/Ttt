@@ -5,7 +5,7 @@ function openTab(id) {
     document.getElementById(id).classList.add("active");
 }
 
-const BETA_PASSWORD = "123@";
+const BETA_PASSWORD = "1273-7373-hdnj-1849";
 
 function unlockBeta() {
     if (document.getElementById("betaPassword").value === BETA_PASSWORD) {
