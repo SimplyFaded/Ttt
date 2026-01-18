@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MonkeyChaser VR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">MonkeyChaser VR</div>
+    <nav>
+        <span onclick="openTab('overview')">Overview</span>
+        <span onclick="openTab('download')">Download</span>
+        <span onclick="openTab('fanart')">Fanart</span>
+        <span onclick="openTab('news')">News</span>
+        <span onclick="openTab('beta')">Beta</span>
+        <span onclick="openTab('credits')">Credits</span>
+    </nav>
+</header>
+
+<main>
+    <!-- OVERVIEW -->
+    <section id="overview" class="tab active">
+        <h1>MonkeyChaser VR</h1>
+        <p class="subtitle">
+            A standalone VR experience for Meta Quest 3 and 3S,
+            focused on fast traversal and comfort-first gameplay.
+        </p>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="tab">
+        <h1>Stable Release</h1>
+
+        <div class="previews">
+            <img src="images/preview1.webp" onclick="openImage(this.src)">
+            <img src="images/preview2.webp" onclick="openImage(this.src)">
+            <img src="images/preview3.webp" onclick="openImage(this.src)">
+        </div>
+
+        <a class="download-btn" href="apk/MonkeyChaserVR.apk" download>
+            Download APK
+        </a>
+    </section>
+
+    <!-- FANART -->
+    <section id="fanart" class="tab">
+        <h1>Community Fanart</h1>
+
+        <div class="fanart-grid">
+            <div class="fanart-card">
+                <img src="images/fanart/fanart1.webp" onclick="openImage(this.src)">
+                <span>Mr. Bannana</span></span>
+            </div>
+            <div class="fanart-card">
+                <img src="images/fanart/fanart2.webp" onclick="openImage(this.src)">
+                <span>Cone aka Lijuso</span>
+            </div>
+            <div class="fanart-card">
+                <img src="images/fanart/fanart3.webp" onclick="openImage(this.src)">
+                <span>Spacesiege5902</span>
+            </div>
+            <div class="fanart-card">
+                <img src="images/fanart/fanart4.webp" onclick="openImage(this.src)">
+                <span>Loxyyyyy</span>
+            </div>
+            <div class="fanart-card">
+                <img src="images/fanart/fanart5.webp" onclick="openImage(this.src)">
+                <span>Vexo</span>
+            </div>
+            <div class="fanart-card">
+                <img src="images/fanart/fanart6.webp" onclick="openImage(this.src)">
+                <span>Loxyyyyy</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" class="tab">
+        <h1>News</h1>
+
+        <div class="dark-news">
+            <img src="images/news-dark.webp" onclick="openImage(this.src)">
+            <h2>???</h2>
+            <p>Everything Just took a Dark Turn</p>
+        </div>
+    </section>
+
+    <!-- BETA -->
+    <section id="beta" class="tab">
+        <h1>Closed Beta</h1>
+
+        <div id="betaLock" class="beta-box">
+            <input type="password" id="betaPassword" placeholder="Beta password">
+            <button onclick="unlockBeta()">Unlock Beta</button>
+            <p id="betaStatus"></p>
+        </div>
+
+        <div id="betaContent" class="hidden">
+            <a class="download-btn" href="beta/MonkeyChaserVR-BETA.apk" download>
+                Download Beta APK
+            </a>
+        </div>
+    </section>
+
+    <!-- CREDITS -->
+    <section id="credits" class="tab">
+        <h1>Credits</h1>
+
+        <div class="credits-box">
+            <div><span>Owner</span>Vexo</div>
+            <div><span>Co-Owner</span>Lijuso</div>
+            <div><span>Website Developer</span>SimplyFaded</div>
+        </div>
+    </section>
+</main>
+
+<!-- IMAGE MODAL -->
+<div id="imageModal" onclick="closeImage()">
+    <img id="modalImage">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
