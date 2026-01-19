@@ -203,3 +203,12 @@ h1 {
     max-height: 90%;
     border-radius: 12px;
 }
+
+
+.last-updated {
+    margin-top: 8px;
+    font-size: 0.85rem;
+    color: #bbbbbb;
+    opacity: 0.8;
+    text-align: center;
+}
